@@ -11,56 +11,65 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <style>
+
         .navbar {
             margin-bottom: 0px;
+			background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 54%, rgba(0,0,255,1) 100%);
         }
 
         a {
             color: black;
             text-decoration: none;
         }
+		.nav-tabs-custom:hover {
+            border: 1px solid rgba(0,0,255,1) !important;
+        }
+		.nav-tabs-custom {
+            border: 1px solid rgba(0,0,0,0.3) !important;
+        }
+		.field-item p{
+		   font-size:12px;
+		}
+		
+       .bodyBackground{
+	  background-color:#F6F9FB;
+	   }
+	      <!-- @media only screen and (max-width: 991px) and (min-width: 769px){ -->
+<!-- .headingLabel{ -->
+		   <!-- font-size:12px; -->
+		<!-- } -->
+
+
     </style>
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini sidebar-collapse" id="bodyElement" onLoad="startTime()">
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse" id="bodyElement" ><!--onLoad="startTime()"-->
     <div class="wrapper">
-        <nav class="navbar navbar-static-top">
+        <nav class="navbar navbar-static-top" >
             <a style="text-decoration:none; color:#353F66">
-                <span>
-                    <img src="icons/RayNkonyeniLogo.png" height="51" style="margin-left:10px;color:white;border-radius:9px 0px 0px 9px; margin-top:-2px; padding:0px;" />
-                    <label style="background-color:white;border-radius:0px 9px 9px 0px; margin-top:10px; padding:17px;font-family:Roboto;font-size:13px;width:70%">    Ray Nkonyeni<span style="font-weight:300"> Revenue Enhancement</span></label>
+                <span >
+                    <img src="icons/citypowerlogo.png" height="51" style="margin-left:10px;color:white;border-radius:9px 0px 0px 9px; margin-top:-2px; padding:0px;" />
+                    <label style="border-radius:0px 9px 9px 0px; margin-top:10px; padding:17px;font-family:Roboto;font-size:13px;width:70%">    City Power<span style="font-weight:300"> Revenue Enhancement</span></label>
                 </span>
             </a>
         </nav>
 
-        <div style="background-color:#F6F9FB">
-            <!-- Content Header (Page header) -->
-            <section class="content-header ">
-
-                <ol class="breadcrumb ">
-                    <li><a href="#">/Dashboard</a></li>
-                </ol>
-                <span class="breadcrumb pull-right " style="font-size: 13px;vertical-align:center; ">
-                    <label id="dateToday"></label>  |  <label style="font-family: Roboto;font-weight: lighter;font-size:11px " id="time"></label>
-                </span>
-            </section>
-            <!-- Main content -->
+        <div class="bodyBackground" >
             <section id="main" class="content">
-                <!-- Main row -->
-                <br />
-                <div class="row">
+                  <div class="row">
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Purchases&waid=7f-fT0bhwEq2LJGvf_-Rq-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/shopping-cart-of-checkered-design.svg" alt="cart" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" />
-                                        <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
-                                            <b>Purchases</b>
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/shopping-cart-of-checkered-design.svg" alt="cart" style=" border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style=" border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b class="headingLabel">Purchases</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
+                                <div class="tab-content" style="height:270px">
                                     <img src="images/CP-Purchases.png" height="180" style="width:100%;" class="img-fluid" alt="City Power Revenue Management - Purchases" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -71,19 +80,22 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Energy%20Balancing&waid=wX5_pXzckEiOhzDraXNbD-261601c755ghly&wavid=0">
-
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header"><img src="icons/energy-balancing.svg" alt="balance" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px"><b>Energy Balancing</b></label></li>
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/energy-balancing.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b>Energy Balancing</b>
+                                        </label>
+                                    </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Energy Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:270px">
+                                    <img src="images/CP-Energy_Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -92,25 +104,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
-                            <!-- /.nav-tabs-custom -->
                         </section>
                     </a>
 
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Exception%20Report&waid=4dbMoWskQ06EoFNbOH61n-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/warning.svg" alt="warning" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/warning.svg" alt="report" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Exception Report</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Exception Report.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:270px">
+                                    <img src="images/CP-Exception_Report.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -119,52 +130,51 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+					<a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20New%20Service%20Connections&waid=g4H7qKFxrE6AoEVgKRy8o-261601c755ghly&wavid=0">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                            <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
+                                <ul class="nav nav-tabs pull-right" style="border:0px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/plug.svg" alt="connection" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b>New Service Connections</b>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" style="height:270px">
+                                    <img src="images/CP-New_Service_Connections.png" height="180" style="width:100%;" class="img-fluid" alt="City Power Revenue Management - Purchases" typeof="foaf:Image">
                                     <p></p>
+                                    <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+                                        <div class="field-items">
+                                            <div class="field-item">
+                                                <p>The purpose of this report is to provide a breakdown of the new service connections and new service connection sales associated with prepaid meters.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
                     </a>
                 </div>
                 <div class="row">
-                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20New%20Service%20Connections&waid=g4H7qKFxrE6AoEVgKRy8o-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
-                            <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
-                                <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/plug.svg" alt="cart" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" />
-                                        <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
-                                            <b>New Service Connections</b>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-New Service Connections.png" height="180" style="width:100%;" class="img-fluid" alt="City Power Revenue Management - Purchases" typeof="foaf:Image">
-                                    <p></p>
-                                    <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
-                                        <div class="field-items">
-                                            <div class="field-item">
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </section>
-                    </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Prepaid%20and%20PostPaid%20Reports&waid=bJQOgVAovkKUW7KdiSDI5-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/cash.svg" alt="balance" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" />
-                                        <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/cash.svg" alt="reports" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Prepaid and PostPaid Reports</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Energy Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-Energy_Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -173,7 +183,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                             <!-- /.nav-tabs-custom -->
@@ -181,160 +190,155 @@
                     </a>
 
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Prepaid%20Revenue&waid=GUSWS29HdUGE64CAp_P_1-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/business-and-finance.svg" alt="revenue" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/business-and-finance.svg" alt="finance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Prepaid Revenue</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Prepaid Revenue.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-Prepaid_Revenue.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>The purpose of this report is to provide a breakdown of prepaid customer revenue.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </section>
                     </a>
-                </div>
-                <div class="row">
-                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Revenue%20Assurance%20%26%20Enhancement&waid=xF_HhjTj4kiEc1iR_e7Km-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+					                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Revenue%20Assurance%20%26%20Enhancement&waid=xF_HhjTj4kiEc1iR_e7Km-261601c755ghly&wavid=0">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/revenue.svg" alt="warning" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/revenue.svg" alt="revenue" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:12px">
                                             <b>Revenue Assurance & Enhancement</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Revenue Assurance & Enhancement.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-Revenue_Assurance_%26_Enhancement.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>The purpose of these reports are to provide an overview of the pre-billing  and post-billing operations such as register reading performance and meter by law compliance.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20SLS&waid=UC2oJgRm0U2hcYqxeD0tR-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/growth.svg" alt="balance" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" />
-                                        <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/growth.svg" alt="sls" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>SLS</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
+                                <div class="tab-content" style="height:280px">
                                     <img src="images/CP-SLS.png" height="180" style="width:100%" class="img-fluid" alt="SLS" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>This report will identify the key performance targets for interruptions and meters and indicate City Power's performance in achieving these targets.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                             <!-- /.nav-tabs-custom -->
                         </section>
                     </a>
+                </div>
 
-                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20%25%20Change%20in%20Customers&waid=AAY27W1yJ0SJfa7Xe-PEV-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                <div class="row">
+				                 <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20%25%20Change%20in%20Customers&waid=AAY27W1yJ0SJfa7Xe-PEV-261601c755ghly&wavid=0">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/customer.svg" alt="warning" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/customer.svg" alt="warning" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>1C % Change in Customers</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-1C % Change in Customers.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-1C_%25_Change_in_Customers.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>This report will display the total number of pre and post customers and the percentage change of customers if any, in these categories.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </section>
                     </a>
-                </div>
-
-                <div class="row">
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20SAIDI%20and%20SAIFI&waid=gJKhZ8gfR0eySKw39Ythu-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/time.svg" alt="warning" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/time.svg" alt="SAIDI" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>1C SAIDI and SAIFI</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-1C SAIDI and SAIFI.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-1C_SAIDI_and_SAIFI.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>These Network KPI reports will measure the international benchmarks for quality of service for interruption durations and interruption frequency.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Balanced%20Scorecard&waid=j_VuMfKCbkSqlyfwpf5ih-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/scoreboard.svg" alt="balance" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" />
-                                        <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/scoreboard.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Balanced Scorecard</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Balanced Scorecard.png" height="180" style="width:100%" class="img-fluid" alt="SLS" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-Balanced_Scorecard.png" height="180" style="width:100%" class="img-fluid" alt="SLS" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>This report will indicate the company level KPI performance.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                             <!-- /.nav-tabs-custom -->
@@ -342,26 +346,26 @@
                     </a>
 
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Technical%20Assets&waid=R1i6iyEghk61yqqECkM1G-261601c755ghly&wavid=0">
-                        <section class="col-sm-4 connectedSortable">
+                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header">
-                                        <img src="icons/technical-support.svg" alt="warning" style="width:40px;height:40px;background-color:#F6F9FB;margin-right:5px; border-radius:9px; padding:9px" /> <label style="background-color:#F6F9FB;width:330px; border-radius:9px; padding:3px 12px;font-family:Roboto; font-size:17px">
+                                    <li class="pull-left header" style="width:100%">
+                                        <img src="icons/technical-support.svg" alt="technical" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Technical Assets</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:250px">
-                                    <img src="images/CP-Technical Assets.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content" style="height:280px">
+                                    <img src="images/CP-Technical_Assets.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p></p>
+                                                <p>This report was created to provide City Power with an wholistic view of their technical assets such as their physical locations and conditions and enable City Power to make strategic decisions to improve the utilisation of its assets.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </section>
@@ -371,185 +375,9 @@
 
             <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
-        <!-- <footer class="main-footer" style="background-color:#f9f9fb"> -->
-        <footer style="text-align:center" style="background-color:#f9f9fb">
-            <!--<div class="pull-right hidden-xs">
-                Powered by <b>Techsoft</b> v0.1
-            </div>-->
-            <strong>Powered by <a href="https://www.tech-soft.co.za/"><b>Techsoft </b></a> | </strong>Copyright &copy;
-            <script type="text/javascript">document.write(new Date().getFullYear());</script>. All rights
-            reserved.
-        </footer>
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark" style="display: none;">
-            <!-- Create the tabs -->
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <!-- Home tab content -->
-                <div class="tab-pane" id="control-sidebar-home-tab">
-                    <h3 class="control-sidebar-heading">Recent Activity</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                                    <p>Will be 23 on April 24th</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-user bg-yellow"></i>
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-                                    <p>New phone +1(800)555-1234</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-                                    <p>nora@example.com</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-file-code-o bg-green"></i>
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-                                    <p>Execution time 5 seconds</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Custom Template Design
-                                    <span class="label label-danger pull-right">70%</span>
-                                </h4>
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Update Resume
-                                    <span class="label label-success pull-right">95%</span>
-                                </h4>
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Laravel Integration
-                                    <span class="label label-warning pull-right">50%</span>
-                                </h4>
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Back End Framework
-                                    <span class="label label-primary pull-right">68%</span>
-                                </h4>
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-                </div>
-                <!-- /.tab-pane -->
-                <!-- Stats tab content -->
-                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-                <!-- /.tab-pane -->
-                <!-- Settings tab content -->
-                <div class="tab-pane" id="control-sidebar-settings-tab">
-                    <form method="post">
-                        <h3 class="control-sidebar-heading">General Settings</h3>
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Report panel usage
-                                <input type="checkbox" class="pull-right" checked>
-                            </label>
-                            <p>
-                                Some information about this general settings option
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Allow mail redirect
-                                <input type="checkbox" class="pull-right" checked>
-                            </label>
-                            <p>
-                                Other sets of options are available
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Expose author name in posts
-                                <input type="checkbox" class="pull-right" checked>
-                            </label>
-                            <p>
-                                Allow the user to show his name in blog posts
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-                        <h3 class="control-sidebar-heading">Chat Settings</h3>
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Show me as online
-                                <input type="checkbox" class="pull-right" checked>
-                            </label>
-                        </div>
-                        <!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Turn off notifications
-                                <input type="checkbox" class="pull-right">
-                            </label>
-                        </div>
-                        <!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Delete chat history
-                                <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                            </label>
-                        </div>
-                        <!-- /.form-group -->
-                    </form>
-                </div>
-                <!-- /.tab-pane -->
-            </div>
-        </aside>
-        <div class="control-sidebar-bg"></div>
+
     </div>
- </body>
-<script>
+    <!--<script>
     function startTime() {
         var today = new Date();
         var h = today.getHours();
@@ -574,9 +402,7 @@
     }
 
 
-</script>
-<script>
+    </script>-->
+</body>
 
-
-</script>
 </html>
