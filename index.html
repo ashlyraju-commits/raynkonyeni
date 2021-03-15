@@ -14,8 +14,8 @@
 
         .navbar {
             margin-bottom: 0px;
-			background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 54%, rgba(0,0,255,1) 100%);
+background: rgb(39,62,156);
+background: linear-gradient(90deg, rgba(39,62,156,1) 0%, rgba(39,62,156,1) 12%, rgba(9,213,255,1) 49%, rgba(255,255,255,1) 90%);
         }
 
         a {
@@ -35,11 +35,28 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
        .bodyBackground{
 	  background-color:#F6F9FB;
 	   }
-	      <!-- @media only screen and (max-width: 991px) and (min-width: 769px){ -->
-<!-- .headingLabel{ -->
-		   <!-- font-size:12px; -->
-		<!-- } -->
-
+	     @media only screen and (max-width: 100vw) and (min-width: 769px){
+		 .col-sm-2{
+		   width:20%;
+		 }
+		 
+		 }
+		 .tab-content{
+		 	height:278px;
+		 }
+	     @media only screen and (max-width: 1265px) and (min-width: 769px){
+		  .tab-content{
+		    height:300px !important;
+		  }
+		  	     @media only screen and (max-width: 1104px) and (min-width: 769px){
+		  .tab-content{
+		    height:330px !important;
+		  }
+		  
+		  		.headingLabel{
+		   font-size:10px;
+		}
+		 }
 
     </style>
 </head>
@@ -48,9 +65,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
     <div class="wrapper">
         <nav class="navbar navbar-static-top" >
             <a style="text-decoration:none; color:#353F66">
-                <span >
-                    <img src="icons/citypowerlogo.png" height="51" style="margin-left:10px;color:white;border-radius:9px 0px 0px 9px; margin-top:-2px; padding:0px;" />
-                    <label style="border-radius:0px 9px 9px 0px; margin-top:10px; padding:17px;font-family:Roboto;font-size:13px;width:70%">    City Power<span style="font-weight:300"> Revenue Enhancement</span></label>
+                <span class="pull-right" style="margin-right:5px">
+                    <label style="border-radius:0px 9px 9px 0px; margin-top:10px; padding:17px;font-family:Roboto;font-size:13px;">    City Power<span style="font-weight:300"> Revenue Enhancement</span></label>
+                    <img src="icons/citypowerlogo.png" height="51" style="margin-left:10px;color:white; margin-top:-2px; padding:0px;" />
                 </span>
             </a>
         </nav>
@@ -59,17 +76,17 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
             <section id="main" class="content">
                   <div class="row">
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Purchases&waid=7f-fT0bhwEq2LJGvf_-Rq-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/shopping-cart-of-checkered-design.svg" alt="cart" style=" border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style=" border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
-                                            <b class="headingLabel">Purchases</b>
+                                        <!-- <img src="icons/shopping-cart-of-checkered-design.svg" alt="cart" style=" border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style=" border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b >Purchases</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:270px">
+                                <div class="tab-content">
                                     <img src="images/CP-Purchases.png" height="180" style="width:100%;" class="img-fluid" alt="City Power Revenue Management - Purchases" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -84,18 +101,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Energy%20Balancing&waid=wX5_pXzckEiOhzDraXNbD-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/energy-balancing.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/energy-balancing.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Energy Balancing</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:270px">
-                                    <img src="images/CP-Energy_Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content">                             
+								<img src="images/CP-Energy_Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -108,44 +125,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                             </div>
                         </section>
                     </a>
-
-                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Exception%20Report&waid=4dbMoWskQ06EoFNbOH61n-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
-                            <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
-                                <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header" style="width:100%">
-                                        <img src="icons/warning.svg" alt="report" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
-                                            <b>Exception Report</b>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" style="height:270px">
-                                    <img src="images/CP-Exception_Report.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
-                                    <p></p>
-                                    <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
-                                        <div class="field-items">
-                                            <div class="field-item">
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </a>
 					<a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20New%20Service%20Connections&waid=g4H7qKFxrE6AoEVgKRy8o-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/plug.svg" alt="connection" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
-                                            <b>New Service Connections</b>
+                                        <!-- <img src="icons/plug.svg" alt="connection" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b class="headingLabel">New Service Connections</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:270px">
+                                <div class="tab-content">
                                     <img src="images/CP-New_Service_Connections.png" height="180" style="width:100%;" class="img-fluid" alt="City Power Revenue Management - Purchases" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -159,49 +150,19 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                             </div>
                         </section>
                     </a>
-                </div>
-                <div class="row">
-
-                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Prepaid%20and%20PostPaid%20Reports&waid=bJQOgVAovkKUW7KdiSDI5-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
-                            <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
-                                <ul class="nav nav-tabs pull-right" style="border:0px">
-                                    <li class="pull-left header" style="width:100%">
-                                        <img src="icons/cash.svg" alt="reports" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
-                                            <b>Prepaid and PostPaid Reports</b>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" style="height:280px">
-                                    <img src="images/CP-Energy_Balancing.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
-                                    <p></p>
-                                    <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
-                                        <div class="field-items">
-                                            <div class="field-item">
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.nav-tabs-custom -->
-                        </section>
-                    </a>
-
+					
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Prepaid%20Revenue&waid=GUSWS29HdUGE64CAp_P_1-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/business-and-finance.svg" alt="finance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/business-and-finance.svg" alt="finance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Prepaid Revenue</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
-                                    <img src="images/CP-Prepaid_Revenue.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content">                                    <img src="images/CP-Prepaid_Revenue.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -214,19 +175,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                             </div>
                         </section>
                     </a>
-					                    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Revenue%20Assurance%20%26%20Enhancement&waid=xF_HhjTj4kiEc1iR_e7Km-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+					<a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Revenue%20Assurance%20%26%20Enhancement&waid=xF_HhjTj4kiEc1iR_e7Km-261601c755ghly&wavid=0">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/revenue.svg" alt="revenue" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:12px">
-                                            <b>Revenue Assurance & Enhancement</b>
+                                        <!-- <img src="icons/revenue.svg" alt="revenue" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:12px">
+                                            <b class="headingLabel">Revenue Assurance & Enhancement</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
-                                    <img src="images/CP-Revenue_Assurance_%26_Enhancement.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
+                                <div class="tab-content">                                    <img src="images/CP-Revenue_Assurance_%26_Enhancement.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
@@ -239,18 +199,20 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                             </div>
                         </section>
                     </a>
+                </div>
+                <div class="row">
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20SLS&waid=UC2oJgRm0U2hcYqxeD0tR-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/growth.svg" alt="sls" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/growth.svg" alt="sls" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>SLS</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
+                                <div class="tab-content">
                                     <img src="images/CP-SLS.png" height="180" style="width:100%" class="img-fluid" alt="SLS" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -265,21 +227,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                             <!-- /.nav-tabs-custom -->
                         </section>
                     </a>
-                </div>
-
-                <div class="row">
-				                 <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20%25%20Change%20in%20Customers&waid=AAY27W1yJ0SJfa7Xe-PEV-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+				    <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20%25%20Change%20in%20Customers&waid=AAY27W1yJ0SJfa7Xe-PEV-261601c755ghly&wavid=0">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/customer.svg" alt="warning" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
-                                            <b>1C % Change in Customers</b>
+                                        <!-- <img src="icons/customer.svg" alt="warning" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                            <b class="headingLabel">1C % Change in Customers</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
+                                <div class="tab-content">
                                     <img src="images/CP-1C_%25_Change_in_Customers.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -294,17 +253,17 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/Operational%20Losses%20and%20Profitability/City%20Power%20Revenue%20Management%20-%201C%20SAIDI%20and%20SAIFI&waid=gJKhZ8gfR0eySKw39Ythu-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/time.svg" alt="SAIDI" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/time.svg" alt="SAIDI" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>1C SAIDI and SAIFI</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
+                                <div class="tab-content" >
                                     <img src="images/CP-1C_SAIDI_and_SAIFI.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -319,17 +278,17 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                         </section>
                     </a>
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Balanced%20Scorecard&waid=j_VuMfKCbkSqlyfwpf5ih-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/scoreboard.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/scoreboard.svg" alt="balance" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Balanced Scorecard</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
+                                <div class="tab-content" >
                                     <img src="images/CP-Balanced_Scorecard.png" height="180" style="width:100%" class="img-fluid" alt="SLS" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
@@ -346,23 +305,23 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(200,200,255,1) 
                     </a>
 
                     <a href="http://102.37.3.46:9801/spotfire/wp/analysis?file=/City%20Power%20Demo/City%20Power%20Revenue%20Management%20-%20Technical%20Assets&waid=R1i6iyEghk61yqqECkM1G-261601c755ghly&wavid=0">
-                        <section class="col-sm-3 connectedSortable" style="padding-left:5px;padding-right:5px">
+                        <section class="col-sm-2 connectedSortable" style="padding-left:5px;padding-right:5px">
                             <div class="nav-tabs-custom" style="padding:9px 0px;border-radius:9px">
                                 <ul class="nav nav-tabs pull-right" style="border:0px">
                                     <li class="pull-left header" style="width:100%">
-                                        <img src="icons/technical-support.svg" alt="technical" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" />
-                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:80%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
+                                        <!-- <img src="icons/technical-support.svg" alt="technical" style="border: 1px solid rgba(0,0,0,0.1);width:37px;height:37px;background-color:#F6F9FB;margin-right:3px; border-radius:9px; padding:7px" /> -->
+                                        <label style="border: 1px solid rgba(0,0,0,0.1);background-color:#F6F9FB;width:100%; border-radius:9px; padding:0px 12px;font-family:Roboto; font-size:15px">
                                             <b>Technical Assets</b>
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="tab-content" style="height:280px">
+                                <div class="tab-content">
                                     <img src="images/CP-Technical_Assets.png" height="180" style="width:100%" class="img-fluid" alt="City Power Revenue Management - Energy Balancing" typeof="foaf:Image">
                                     <p></p>
                                     <div class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
                                         <div class="field-items">
                                             <div class="field-item">
-                                                <p>This report was created to provide City Power with an wholistic view of their technical assets such as their physical locations and conditions and enable City Power to make strategic decisions to improve the utilisation of its assets.</p>
+                                                <p>Provides City Power with a wholistic view of their technical assets such as their physical locations and conditions, which enables City Power to make strategic decisions to improve the utilisation of its assets.</p>
                                             </div>
                                         </div>
                                     </div>
